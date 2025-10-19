@@ -93,11 +93,13 @@ function Button({ handleOnclick, handleClear, handleBack }) {
 
   return (
     <>
-      <div className="back" onClick={() => handleBack(back)}>
-        B
-      </div>
-      <div className="clear" onClick={() => handleClear(clear)}>
-        C
+      <div class="bottom-buttons">
+        <div className="back" onClick={() => handleBack(back)}>
+          B
+        </div>
+        <div className="clear" onClick={() => handleClear(clear)}>
+          C
+        </div>
       </div>
       <div className="button-grid">
         {numArr.map((btn) => (
